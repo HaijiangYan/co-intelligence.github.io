@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI review</title>
+		<link rel="icon" type="image/png" sizes="512x512" href="../../images/favi.jpg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/highchart.css" />
+		<noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- import highchart -->
+		<script src="../code/highcharts.js"></script>
+		<script src="../code/modules/timeline.js"></script>
+		<script src="../code/modules/exporting.js"></script>
+		<script src="../code/modules/accessibility.js"></script>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<a href="../../index.html" class="logo">
+								<span class="symbol"><img src="../../images/favicon.png" alt="" /></span><span class="title">Computational Intelligence</span>
+							</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../../index.html">Home</a></li>
+							<li><a href="AI_history.html">Ipsum veroeros</a></li>
+							<li><a href="AI_history.html">Tempus etiam</a></li>
+							<li><a href="AI_history.html">Consequat dolor</a></li>
+							<li><a href="AI_history.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>AI development tree</h1>
+							<span class="image main"><img src="../../images/pic13.jpg" alt="" /></span>
+							
+							<figure class="highcharts-figure">
+								<div id="container"></div>
+								<p class="highcharts-description">
+									Timeline charts are used to place events on a time axis.
+								</p>
+							</figure>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/browser.min.js"></script>
+			<script src="../js/breakpoints.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
+
+	<script type="text/javascript">
+		Highcharts.chart('container', {
+			chart: {
+				type: 'timeline',
+				inverted: true
+			},
+			accessibility: {
+				screenReaderSection: {
+					beforeChartFormat: '<h5>{chartTitle}</h5>' +
+						'<div>{typeDescription}</div>' +
+						'<div>{chartSubtitle}</div>' +
+						'<div>{chartLongdesc}</div>' +
+						'<div>{viewTableButton}</div>'
+				},
+				point: {
+					valueDescriptionFormat: '{index}. {point.label}. ' +
+						'{point.description}.'
+				}
+			},
+			xAxis: {
+				visible: false
+			},
+			yAxis: {
+				visible: false
+			},
+			title: {
+				text: 'Timeline of Space Exploration'
+			},
+			subtitle: {
+				text: 'Info source: <a href="https://en.wikipedia.org/wiki/Timeline_of_space_exploration">www.wikipedia.org</a>'
+			},
+			colors: [
+				'#4185F3',
+				'#427CDD',
+				'#406AB2',
+				'#3E5A8E',
+				'#3B4A68',
+				'#3B4A68',
+				'#3B4A68',
+				'#3B4A68',
+				'#363C46'
+			],
+			series: [{
+				data: [{
+					name: '<a href="../../index.html">2000: Orbiting of an asteroid</a>',
+					description: '14 February 2000, first orbiting of an asteroid ' +
+						'(433 Eros).'
+				}, {
+					name: '2005: Landing on Titan.',
+					description: '14 January 2005, first soft landing on Titan also ' +
+						'first soft landing in the outer Solar System.'
+				}, {
+					name: '2011: Orbit of Mercury',
+					description: '18 March 2011, first spacecraft to orbit Mercury.'
+				}, {
+					name: '2015: Food eaten in space',
+					description: '10 August 2015, first food grown in space and ' +
+						'eaten (lettuce).'
+				}, {
+					name: '2019: Black hole photograph',
+					description: '10 April 2019, first direct photograph of a black ' +
+						'hole and its vicinity.'
+				}, {
+					name: '2020: Private spaceflight',
+					description: '30 May 2020, first orbital human spaceflight ' +
+						'launched by a private company (SpaceX).'
+				}, {
+					name: '2024: Private spaceflight',
+					description: '30 May 2024, first orbital human spaceflight ' +
+						'launched by a private company (SpaceX).'
+				}, {
+					name: '2025: Private spaceflight',
+					description: '30 May 2025, first orbital human spaceflight ' +
+						'launched by a private company (SpaceX).'
+				}, {
+					name: '2026: Private spaceflight',
+					description: '30 May 2026, first orbital human spaceflight ' +
+						'launched by a private company (SpaceX).'
+				}]
+			}]
+		});
+	</script>
+
+	</body>
+</html>
